@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sound Visualizer</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Sound Visualization</h1>
+        <h2>By Cristofer Vargas</h2>
+        
+        <input type="file" id="file-selector">
+        
+        <h3>or choose one of the following:</h3>
+
+        <button onclick="testSound()" id="testSound">Test Sound</button>
+        <button onclick="elements()" id="elements">Elements - Lindsey Sterling</button>
+        <button onclick="walk()" id="walk">Walk on By - Dionne Warwick</button>
+        <button onclick="hurry()" id="hurry">You Cant Hurry Love - The Supremes</button>
+        <button onclick="edm()" id="edm">Secret Love - Ian Van Dal</button>
+
+
+        <div id="container">
+            <canvas id="canvas1"></canvas>
+            <audio id="audio1" controls>
+                <source src="" id="src" />
+            </audio>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
